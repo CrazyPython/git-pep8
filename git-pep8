@@ -1,0 +1,14 @@
+#!/bin/bash
+BRANCH=$(git name-rev HEAD 2> /dev/null | awk "{ print \$2 }")
+echo pep8 on branch "$BRANCH"
+ARCHIVE_NAME=$(basename $(pwd))
+echo directory "$ARCHIVE_NAME"
+files=$(find -P -name "*.py")
+for file in $files;
+do
+  if [[ $file != ./env* ]] && [[ $file != ./docs* ]]
+  then
+    RESPONSE=$(python /opt/git-pep8/pythonTidy.py $file)
+    echo Fixing file: "$file"
+  fi
+done
