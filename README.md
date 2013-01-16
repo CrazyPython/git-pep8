@@ -13,7 +13,8 @@ Well, I use this structure for my projects in Django/Python:
 
 When the script look for file, it always looks for all directories, but it doesn't look in directory env and docs.
 
-To install: curl https://localhost/git-pep8/install.sh sh
+To install: curl https://github.com/cristhianclx/git-pep8/blob/master/install.sh | sh
+
 To uninstall: Only delete the dir /opt/git-pep8.
 
 

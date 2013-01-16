@@ -1,0 +1,9 @@
+*.swp
+*.dia~
+*.doc~
+*.docx~
+~*.xlsx
+.~lock*
+*.bmml
+*.pyc
+docs/
