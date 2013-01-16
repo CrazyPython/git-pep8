@@ -8,5 +8,5 @@ else
     && rm -fr ./git-pep8 \
     && git clone --depth 1 https://github.com/cristhianclx/git-pep8.git \
     && cd git-pep8 \
-    && ln -s /usr/local/bin/git_pep8 /opt/git-pep8/git-pep8
+    && ln -sf /opt/git-pep8/git-pep8 /usr/local/bin/git_pep8
 fi
